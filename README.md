@@ -55,3 +55,9 @@ $$\text{chosen} = \arg\max_{y \in \mathcal{Y}} Q(x, y), \quad \text{rejected} = 
 
 ## License
 MIT
+
+## 📸 Visual Tour
+
+![curation impact](viz/curation_impact.png)
+
+---
