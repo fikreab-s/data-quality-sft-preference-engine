@@ -19,7 +19,7 @@ flowchart LR
 
 ## 🎯 Problem
 
-"Data quality is the most important hyperparameter." — At Merck, identical model architectures yield 25% different performance depending on data curation rigor. This repo operationalizes data-as-research.
+"Data quality is the most important hyperparameter." — In enterprise pharma, identical model architectures yield 25% different performance depending on data curation rigor. This repo operationalizes data-as-research.
 
 ## 🧮 Mathematical Foundation
 
@@ -39,8 +39,8 @@ $$\text{Div}(\mathcal{D}) = \frac{1}{|\mathcal{D}|}\sum_{i} \min_{j \neq i} \|\m
 For each instruction $x$, rank responses by quality score and construct:
 $$\text{chosen} = \arg\max_{y \in \mathcal{Y}} Q(x, y), \quad \text{rejected} = \arg\min_{y \in \mathcal{Y}} Q(x, y)$$
 
-## 🏥 Merck Connection
-- Applied my Merck data validation workflow (business logic checks, analyst review)
+## 🏥 Enterprise Pharma Application
+- Applied my enterprise pharma data validation workflow (business logic checks, analyst review)
 - Quality filtering from 5,000 → 500 examples improved downstream accuracy by 25%
 - Preference pairs directly feed the DPO stage of the post-training pipeline
 
@@ -52,11 +52,6 @@ $$\text{chosen} = \arg\max_{y \in \mathcal{Y}} Q(x, y), \quad \text{rejected} = 
 | PPL filter only | 3,200 | 76% | 85% |
 | IFD + PPL | 1,800 | 82% | 91% |
 | Full pipeline (this repo) | **500** | **87%** | **95%** |
-
-## 🔗 Liquid AI Connection
-- Data quality is central to Liquid's enterprise fine-tuning offering
-- Preference pairs feed directly into DPO (Stage 2)
-- Demonstrates that smaller, curated data > massive noisy data
 
 ## License
 MIT
